@@ -553,7 +553,7 @@ const generateRandomCharacter = () => {
   const randomProfession = professions[getRandomInt(professions.length)];
   const randomPossibility = randomProfession.possibility;
 
-  const races = ["Հայ","Ամերիկացի", "Եվրոպացի", "Ասիացի", "Աֆրիկյան", "Լատինաամերիկացի", "Ավստրալացի", "Հնդիկ", "Ինդոնեզացի", "Թուրք", "Չինացի", "Ճապոնացի", "Կորեացի", "Իրանցի", "Իռլանդացի", "Իտալացի"];
+  const races = ["Հայ","Ամերիկացի", "Եվրոպացի", "Աֆրիկացի", "Լատինաամերիկացի", "Ավստրալացի", "Հնդիկ", "Ինդոնեզացի", "Թուրք", "Չինացի", "Ճապոնացի", "Կորեացի", "Իրանցի", "Իռլանդացի", "Իտալացի"];
   const genders = ["Տղամարդ", "Կին"];
   const healthStates = ["Կատարյալ առողջ", "հիվանդ", "վիրավոր"];
   const humanTraits = ["Հեղինակավոր", "Շփվող", "Նպատակասլաց", "Բարեսիրտ", "Էմպատիկ", "Աշխատասեր", "Ստեղծագործ", "Լավատես", "Համառ", "Անձնուրաց", "Պատասխանատու", "Հավակնոտ", "Ուշադիր", "Համարձակ", "Անկեղծ"];
@@ -592,7 +592,7 @@ const CharacterRegistration = () => {
       {character && (
         <div className="character-info">
           <p><strong>Մասնագիտություն:</strong> {character.profession}</p>
-          <p><strong>Ռասա:</strong> {character.race}</p>
+          <p><strong>Ազգություն:</strong> {character.race}</p>
           <p><strong>Սեռ:</strong> {character.gender}</p>
           <p><strong>Տարիք:</strong> {character.age}</p>
           <p><strong>Առողջական վիճակ:</strong> {character.health}</p>
